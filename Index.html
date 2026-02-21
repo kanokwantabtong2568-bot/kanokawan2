@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>หจก.กนกวรรณ ทับทอง | จำหน่ายเสื้อผ้า รับสั่งตัด นครสวรรค์</title>
+
+<meta name="description" content="หจก.กนกวรรณ ทับทอง ร้านเสื้อผ้านครสวรรค์ จำหน่ายชุดนักเรียน ชุดข้าราชการปกติขาว ชุดครู รับสั่งตัดเสื้อ ไม่มีขั้นต่ำ">
+<meta name="keywords" content="ร้านเสื้อ นครสวรรค์, ชุดนักเรียน, ชุดข้าราชการปกติขาว, ชุดครู, รับสั่งตัดเสื้อ">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --green-main:#006738;
+  --green-light:#e6f2ee;
+  --gray-bg:#f9fafb;
+}
+
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:var(--gray-bg);
+  color:#333;
+  line-height:1.6;
+}
+
+/* ===== Header ===== */
+header{
+  background:#fff;
+  border-bottom:4px solid var(--green-main);
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.header-inner{
+  max-width:1100px;
+  margin:auto;
+  padding:12px 20px;
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+.header-inner img{height:70px;}
+
+header h1{
+  margin:0;
+  color:var(--green-main);
+  font-size:26px;
+}
+
+header p{margin:4px 0 0;color:#555;}
+
+nav{
+  background:var(--green-main);
+  padding:10px;
+  text-align:center;
+}
+
+nav a{
+  color:#fff;
+  margin:0 12px;
+  text-decoration:none;
+  font-weight:bold;
+  white-space:nowrap;
+}
+
+nav a:hover{opacity:.85;}
+
+/* ===== Dropdown ===== */
+.dropdown{position:relative;display:inline-block;}
+
+.dropdown-menu{
+  display:none;
+  position:absolute;
+  top:36px;
+  left:0;
+  background:#fff;
+  min-width:260px;
+  box-shadow:0 6px 20px rgba(0,0,0,.15);
+  border-radius:10px;
+  overflow:hidden;
+  z-index:2000;
+  text-align:left;
+}
+
+.dropdown-menu a{
+  display:block;
+  padding:12px 16px;
+  color:#333;
+  text-decoration:none;
+}
+
+.dropdown-menu a:hover{background:var(--green-light);}
+.dropdown:hover .dropdown-menu{display:block;}
+
+/* ===== Marquee ===== */
+.marquee-box{
+  background:var(--green-light);
+  overflow:hidden;
+  padding:10px 0;
+}
+
+.marquee-track{
+  display:flex;
+  width:max-content;              /* ⭐ สำคัญมาก */
+  animation: marquee 40s linear infinite;
+}
+
+.marquee-track span{
+  font-weight:bold;
+  font-size:18px;
+  color:var(--green-main);         /* ⭐ แก้สีดำ */
+  padding-right:60px;
+  white-space:nowrap;
+}
+
+@keyframes marquee{
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+/* ===== Section ===== */
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+h2{
+  color:var(--green-main);
+  border-left:5px solid var(--green-main);
+  padding-left:12px;
+}
+
+.highlight{
+  background:var(--green-light);
+  padding:30px;
+  border-radius:14px;
+}
+
+.highlight img{
+  width:100%;
+  height:auto;
+  border-radius:14px;
+  margin:20px 0;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#fff;
+  border:1px solid #e5e7eb;
+  padding:22px;
+  border-radius:14px;
+  box-shadow:0 4px 12px rgba(0,0,0,.05);
+}
+
+iframe{
+  width:100%;
+  height:350px;
+  border:0;
+  border-radius:14px;
+}
+
+address a{
+  color:var(--green-main);
+  font-weight:bold;
+  text-decoration:none;
+}
+
+/* ===== Footer ===== */
+footer{
+  background:var(--green-main);
+  color:#fff;
+  text-align:center;
+  padding:22px;
+}
+
+/* ===== Floating ===== */
+.line-float{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#06c755;
+  color:#fff;
+  padding:15px 22px;
+  border-radius:50px;
+  font-weight:bold;
+  text-decoration:none;
+  z-index:9999;
+}
+
+.call-float{
+  position:fixed;
+  bottom:80px;
+  right:20px;
+  background:var(--green-main);
+  color:#fff;
+  padding:14px 22px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <img src="logo-kanokwan.png" alt="หจก.กนกวรรณ ทับทอง">
+    <div>
+      <h1>หจก. กนกวรรณ ทับทอง</h1>
+      <p>จำหน่ายเสื้อผ้า และ รับสั่งตัดเสื้อทุกประเภท</p>
+    </div>
+  </div>
+
+  <nav>
+    <a href="#home">หน้าแรก</a>
+    <a href="#about">เกี่ยวกับเรา</a>
+
+    <div class="dropdown">
+      <a href="#services">สั่งซื้อสินค้า ▾</a>
+      <div class="dropdown-menu">
+        <a href="#">ชุดนักเรียนชาย</a>
+        <a href="#">ชุดนักเรียนหญิง</a>
+        <a href="#">ชุดลูกเสือ / เนตรนารี / ยุวกาชาด</a>
+        <a href="#">ชุดอนุบาล</a>
+        <a href="#">ชุดปฏิบัติธรรม</a>
+        <a href="#">ชุดข้าราชการ (ปกติขาว)</a>
+        <a href="#">ชุดครู</a>
+        <a href="#">รองเท้า – ถุงเท้า</a>
+        <a href="#">อุปกรณ์อื่น ๆ</a>
+        <a href="#">เบ็ดเตล็ด</a>
+        <a href="#">บริการงานปัก</a>
+      </div>
+        </div>
+
+       <a href="#location">แผนที่ร้าน</a>
+           <a href="#contact">ฝ่ายดูแลลูกค้าประชาสัมพันธ์</a>
+           <a href="https://www.facebook.com/kanokwantubthong" target="_blank" class="top-btn fb">Facebook</a>
+         <a href="https://th.shp.ee/jrCb5Ni" target="_blank" class="top-btn fb">Shopee</a>
+         <a href="https://s.lazada.co.th/s.Pd7IU" target="_blank" class="top-btn fb">Lazada</a>
+           <a href="https://www.tiktok.com/@kanokwan.tabthong" target="_blank" class="top-btn Tiktok">Tiktok</a>
+       <a href="#faq">คำถามที่พบบ่อย</a>
+ 
+
+
+  </nav>
+</header>
+
+<!-- ตัวหนังสือวิ่ง -->
+<div class="marquee-box">
+  <div class="marquee-track">
+    <span>หจก.กนกวรรณ ทับทอง ยินดีต้อนรับ &nbsp;&nbsp;&nbsp;</span>
+    <span>หจก.กนกวรรณ ทับทอง ยินดีต้อนรับ &nbsp;&nbsp;&nbsp;</span>
+        <span>หจก.กนกวรรณ ทับทอง ยินดีต้อนรับ &nbsp;&nbsp;&nbsp;</span>
+        <span>หจก.กนกวรรณ ทับทอง ยินดีต้อนรับ &nbsp;&nbsp;&nbsp;</span>
+        <span>หจก.กนกวรรณ ทับทอง ยินดีต้อนรับ &nbsp;&nbsp;&nbsp;</span>
+        <span>หจก.กนกวรรณ ทับทอง ยินดีต้อนรับ &nbsp;&nbsp;&nbsp;</span>
+        <span>หจก.กนกวรรณ ทับทอง ยินดีต้อนรับ &nbsp;&nbsp;&nbsp;</span>
+        <span>หจก.กนกวรรณ ทับทอง ยินดีต้อนรับ &nbsp;&nbsp;&nbsp;</span>
+      
+  </div>
+</div>
+
+<section id="home">
+  <div class="highlight">
+    <h2>จำหน่ายเสื้อผ้า & รับสั่งตัด นครสวรรค์</h2>
+    <img src="kanokwan 1.jpg" alt="หน้าร้านหจก.กนกวรรณ ทับทอง">
+    <img src="kanokwan 2.jpg" alt="หน้าร้านหจก.กนกวรรณ ทับทอง">
+  </div>
+</section>
+
+<section id="about">
+  <h2>เกี่ยวกับเรา</h2>
+  <p>
+    หจก. กนกวรรณ ทับทอง ให้บริการมายาวนาน
+    เน้นคุณภาพ ความซื่อสัตย์ และความพึงพอใจของลูกค้า
+  </p>
+</section>
+
+<section id="services">
+  <h2>สินค้า / บริการ</h2>
+  <div class="grid">
+    <div class="card"><h3>ชุดนักเรียน</h3></div>
+    <div class="card"><h3>ชุดข้าราชการ & ชุดครู</h3></div>
+    <div class="card"><h3>รับสั่งตัด & งานปัก</h3></div>
+  </div>
+</section>
+
+<section id="location">
+  <h2>แผนที่ร้าน</h2>
+  <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3841.286649139222!2d100.1082204!3d15.682930199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e04e159218e823%3A0xbb2afbd01f8d0765!2z4Lij4LmJ4Liy4LiZIOC4q-C4iOC4gS4g4LiB4LiZ4LiB4Lin4Lij4Lij4LiTIOC4l-C4seC4muC4l-C4reC4hw!5e0!3m2!1sth!2sth!4v1765940904719!5m2!1sth!2sth"
+  width="100%"
+  height="350"
+  style="border:0; border-radius:10px;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+  <p>📍 ใกล้ตลาดศรีนคร • 🚗 มีที่จอดรถมากกว่า 10 คัน</p>
+</section>
+
+<section id="contact">
+  <h2>ติดต่อเรา</h2>
+  <address>
+    📞 โทร : <a href="tel:056881529">056-881-529</a><br>
+    💬 LINE: @knwtt<br>
+    📘 Facebook: <a href="https://www.facebook.com/kanokwantubthong" target="_blank">หจก.กนกวรรณ ทับทอง</a><br>
+        ⏰ เปิดบริการทุกวัน : 07:30 – 19:00
+  </address>
+</section>
+
+<section id="faq">
+  <h2>คำถามที่พบบ่อย</h2>
+  <div class="card"><strong>Q:</strong> มีที่จอดรถไหม? <br>A: มีค่ะ สะดวก</div>
+  <div class="card"><strong>Q:</strong> สั่งขั้นต่ำกี่ตัว? <br>A: ไม่มีขั้นต่ำ</div>
+</section>
+
+<footer>
+© 2025 หจก. กนกวรรณ ทับทอง
+</footer>
+
+<a href="https://line.me/R/ti/p/@knwtt" class="line-float" target="_blank">แชท LINE</a>
+<a href="tel:056881529" class="call-float">โทรร้าน</a>
+
+</body>
+</html>
